@@ -21,9 +21,17 @@ docs does?
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
+        Git is more targeted for programming purposes where user manually chooses when to commit the change when the time is just right. Usually the whole project is one logical group of files and all commits make a history of the project creation. Google Docs is more targeted for files easy to read for a human and they can be unrelated and it is better to track them separately.
+
 How can you use the commands git log and git diff to view the history of files?
+
+        I can use git log to view the history of all the commits or versions of files in the repository and I can use git diff to compare two given commits to be able to track the differences in the files and see which change was introduced.
 
 How might using version control make you more confident to make changes that
 could break something?
 
+        Making mistake or introducing risky feature can be part of testing the project, because I can always come back to the previous version of the file so I do not have to worry about breaking the whole project.
+
 Now that you have your workspace set up, what do you want to try using Git for?
+
+        I would like work on my projects using Git and be able to view the history of the projects creation. I can also use Git help to work with any files which change content periodicaly.
