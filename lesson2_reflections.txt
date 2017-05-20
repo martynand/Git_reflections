@@ -19,8 +19,19 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
+		It gives a great overview on the whole structure of the project. I can see what is the parent of each commit and at which point branches were created.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+		All the commits in the second branch are merged into the first branch, and the resulting merge commit becomes the new head of the current branch. It includes all changes from both branches. The diagram shown by git log --graph shows list of commits (-oneline to make the output shorter and easier to see) shows the merged commit has two parents. Clearly shows the structure of merged branches.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+		Pros:
+		It is faster when Git merges automaticly files with no conflict, it simply saves time while working. 
+		It is safer to be able to manually work on the merge conflict, correct a file and accept the final version of the modification of a file.
+
+		Cons:
+		Git can be imperfect. It can make mistakes, for example merge two files together with no conflict and break the code.
