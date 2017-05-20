@@ -17,12 +17,12 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-   
+   The benefit of having a copy of the last known state of the remote stored locally is that I can update my local copy and then I can work on my own branch without merging new changes if I am not ready for that yet, for example if I am going to be offline for a while.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-
+    I think it could be quite hard to collaborate without Git or GitHub as they are targeted for programming purposes. Other way to work together on the project would be to use the same directory or maybe divided in categories for each person working on the project. It could be done online on some shared platform. Hovewer I do not think that this could be efficient enough as changing the same file for example without possibility to clearly see differences could make it very difficult to work and introduce a lot of bugs. 
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
