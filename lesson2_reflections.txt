@@ -1,37 +1,37 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-		When I initialize a repository, empty repository is created with no commits. From the moment of creation I can start making commits per logical change.
+	When I initialize a repository, empty repository is created with no commits. From the moment of creation I can start making commits per logical change.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-		Staging area is the preparation area for the files that will be commited. I control exactly which changes I want to commit.
+	Staging area is the preparation area for the files that will be commited. I control exactly which changes I want to commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-		While working on the project, I can add files one-by-one to the staging area and then I can decide that I have added all files that make logical change and make commit. It makes it easier to specify which files should go into a commit.
+	While working on the project, I can add files one-by-one to the staging area and then I can decide that I have added all files that make logical change and make commit. It makes it easier to specify which files should go into a commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-		It is useful to create the branch if I want to make changes in experimental mode, add unique feature (change the language) - so that commits made on that branch will not affect master branch. Whenever I do some different piece of work like context switching - new concept, bug fixing. Master branch can be called production quality branch which always works and other branches are good for experimenting on them.
+	It is useful to create the branch if I want to make changes in experimental mode, add unique feature (change the language) - so that commits made on that branch will not affect master branch. Whenever I do some different piece of work like context switching - new concept, bug fixing. Master branch can be called production quality branch which always works and other branches are good for experimenting on them.
 
 How do the diagrams help you visualize the branch structure?
 
-		It gives a great overview on the whole structure of the project. I can see what is the parent of each commit and at which point branches were created.
+	It gives a great overview on the whole structure of the project. I can see what is the parent of each commit and at which point branches were created.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-		All the commits in the second branch are merged into the first branch, and the resulting merge commit becomes the new head of the current branch. It includes all changes from both branches. The diagram shown by git log --graph shows list of commits (-oneline to make the output shorter and easier to see) shows the merged commit has two parents. Clearly shows the structure of merged branches.
+	All the commits in the second branch are merged into the first branch, and the resulting merge commit becomes the new head of the current branch. It includes all changes from both branches. The diagram shown by git log --graph shows list of commits (-oneline to make the output shorter and easier to see) shows the merged commit has two parents. Clearly shows the structure of merged branches.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
 
-		Pros:
-		It is faster when Git merges automaticly files with no conflict, it simply saves time while working. 
-		It is safer to be able to manually work on the merge conflict, correct a file and accept the final version of the modification of a file.
+	Pros:
+	It is faster when Git merges automaticly files with no conflict, it simply saves time while working. 
+	It is safer to be able to manually work on the merge conflict, correct a file and accept the final version of the modification of a file.
 
-		Cons:
-		Git can be imperfect. It can make mistakes, for example merge two files together with no conflict and break the code.
+	Cons:
+	Git can be imperfect. It can make mistakes, for example merge two files together with no conflict and break the code.
