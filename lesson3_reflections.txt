@@ -27,3 +27,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
+When working in a separate branch you are kind of just testing new feature before merging it into original version. This can be very useful when working in a team and you want to make sure that all changes can be approved and all works well together with master.
